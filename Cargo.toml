@@ -1,0 +1,16 @@
+[package]
+name = "glommio_deadlock"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures = "0.3.25"
+glommio = "0.7.0"
+more-asserts = "0.3.1"
+nanorand = "0.7.0"
+
+[features]
+default = ["debug_background_tasks"]
+debug_background_tasks = []
